@@ -14,7 +14,8 @@ html {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: auto; 
+    /* Altura automatica */
 }
 
 .Header {
@@ -28,3 +29,4 @@ img {
     color: #FFF;
     filter: blur(.1rem);
 }
+

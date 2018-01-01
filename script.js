@@ -68,7 +68,35 @@
 })(console.log, document, navigator, window);
 //Aplicación Demo interactuando con el API de Github y la sincronización de Fondo.
 ((c, d, n, w) => {
+    const userInfo = d.querySelector('.GitHubUser'),
+        searchForm = d.querySelector('.GitHubUser-form')
 
+        function fetchGithubUser(username, requestFromBGSync){//Recuperar información
+            let name = username || 'escueladigital',
+                url = `https://api.github.com/user/${name}`
+
+                fetch(url, {method: 'GET'})//fetch devuelve promesas
+                .then(response => response.json())
+                .then(userData => {
+                    let tamplate =`
+                     <article class="GitHubUser-info">
+                        <h2>${userData.name}</h2>
+                        <img src="${userData.avatar_url}" alt="${userData.login}">
+                        <p>${userData.bio}</p>
+                        <ul>
+                        <li>User GitHub ${userData.login}</li>
+                        <li>Url GitHub ${userData.html_url}</li>
+                        <li>Seguidores ${userData.followers}</li>
+                        <li>Siguiendo ${userData.following}</li>
+                        <li>Ubicación ${userData.location}</li>
+                        </ul>
+                    </article>
+                    `
+                    //Cargando dinamicamente
+                    userInfo.innerHTML = template
+                })
+                .catch(err => c(err))
+        }
 })(console.log, document, navigator, window);
 
 ((c, d, n, w) => {
