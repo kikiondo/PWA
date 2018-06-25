@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PWA Demo</title>
-    <!-- Meta etiquetas para quenavegadores de dispositivos sepan del manifest de preferencia que esté en la raiz del proyecto -->
+
     <link rel="manifest" href="./manifest.json">
-    <meta name="theme-color" content="#F7DF1E">
-    <!-- Iconos de dispositivos -->
+    <meta name="theme-color" content="#F7DF1E"> 
+
+    <!-- Detección de Icono de PWA -->
     <link rel="icon" type="image/png" sizes="16x16" href="./img/icon_16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/icon_32x32.png">
     <link rel="icon" type="image/png" sizes="64x64" href="./img/icon_64x64.png">
@@ -19,8 +20,8 @@
     <link rel="icon" type="image/png" sizes="384x384" href="./img/icon_384x384.png">
     <link rel="icon" type="image/png" sizes="512x512" href="./img/icon_512x512.png">
     <link rel="icon" type="image/png" sizes="1024x1024" href="./img/icon_1024x1024.png">
-    <!-- Meta etiquetas en ISO -->
-    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <!-- Metatags iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-title" content="PWA Demo">
@@ -35,20 +36,16 @@
     <meta property="og:image" content="./img/icon_128x128.png">
     <meta property="og:site_name" content="EDteam">
     <meta property="og:url" content="https://pwa.ed.team">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="Header">
-        <h1>Progressive Web App Demo</h1>
-    </header>
-    
-    <section class="GithubUser"></section>
-    <form action="" class="GithubUser-form">
-        <imput type="search" id="search" placeholder="Buscador Github">
-    </form>
+    <h1>Progressive Web Apps Demo</h1>
+    <!-- <div id="movies"></div> -->
 
-
+    <!-- <script src="./fetch.js"></script> -->
     <script src="./script.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "Es el curso de las html avanzado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"browser-sync start --server --files public --serveStatic public --reload-delay=300 --reload-debounce=500"
+  },
+  "author": "Carlos Alberto Vera <cvera@ucol.mx>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.24.4"
+  }
+}
