@@ -1,5 +1,7 @@
 # Fetch
 
+Evalua una petición.
+
 Es una api que nos permite poder hacer peticiones azincronas, se podría decir que es la evolución de ajax pero un poco más sencillo.
 
 Fetch devuelve una promesa, la salida de una promesa se convierte en la entrada de otra.
