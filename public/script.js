@@ -1,5 +1,5 @@
-//Permite pasar objetos globales n.n/ evitar ciclo con ;
-((c, w, n, d)=>{
+//  Permite pasar objetos globales n.n/ evitar ciclo con ;
+((c, w, n, d) => {
   //Para registrar mi service worker es solo una validación
 
   //REGISTRO DE SERVICE WORKER
